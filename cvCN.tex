@@ -125,7 +125,7 @@
 \begin{center}
     {\Huge \scshape 张郑挥} \\ \vspace{1pt}
     \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 18983488995 ~ \raisebox{-0.2\height}\faEnvelope\  \underline{kevinzhang.cq@gmail.com} ~
+    \small \raisebox{-0.1\height}\faPhone\ 18983488995 ~ \raisebox{-0.2\height}\faEnvelope\  \underline{zzh.cq@qq.com} ~
     \href{https://linkedin.com/in/kevin-zhang-95245521b/}{\raisebox{-0.2\height}\faLinkedin\ \underline{Home}}  ~
     \href{https://github.com/kevin-zhangzh}{\raisebox{-0.2\height}\faGithub\ \underline{Home}}
     \vspace{-8pt}
@@ -144,39 +144,43 @@
   \resumeSubHeadingListEnd
 
 %------RELEVANT COURSEWORK-------
-%\section{Relevant Coursework}
-%    %\resumeSubHeadingListStart
-%        \begin{multicols}{4}
-%            \begin{itemize}[itemsep=-5pt, parsep=3pt]
-%                \item\small Data Structures
-%                \item Software Methodology
-%                \item Algorithms Analysis
-%                \item Database Management
-%                \item Artificial Intelligence
-%                \item Internet Technology
-%                \item Systems Programming
-%                \item Computer Architecture
-%            \end{itemize}
-%        \end{multicols}
-%        \vspace*{2.0\multicolsep}
-%    %\resumeSubHeadingListEnd
+\section{相关课程}
+   %\resumeSubHeadingListStart
+       \begin{multicols}{4}
+           \begin{itemize}[itemsep=-5pt, parsep=3pt]
+               \item 数据结构与算法
+               \item 计算机网络
+               \item 操作系统概论
+               \item 数据库概论
+               \item 人工智能与算法
+               \item 区块链技术基础
+               \item 云原生与分布式系统
+               \item go语言与分布式开发
+           \end{itemize}
+       \end{multicols}
+       \vspace*{2.0\multicolsep}
+   %\resumeSubHeadingListEnd
 
+\section{荣誉证书}
+    \resumeItemListStart
+    \resumeItem{第八届全国大学生数学竞赛三等奖}
+    \resumeItem{第十一届全国大学生数学建模竞赛省一等奖}
+    \resumeItem{CET-6}
+    \resumeItemListEnd
+ \vspace{-16pt}
 
 %-----------EXPERIENCE-----------
 \section{实习经历}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {\href{https://www.ever.finance}{\underline{everVision}}(区块链存储相关)}{May 2022 -- May 2023}
+      {everVision}{May. 2022 -- May. 2023}
       {golang 后端开发}{杭州, 浙江}
       \resumeItemListStart
-        \resumeItem{参与监控系统的开发，主要用到了 RPC 服务调用区块链节点的相关方法实现了合约的状态监控并对异常情况进行告警，发生异常操作时针对多签合约进行紧急关停，增加锁仓资金的安全性}
-        \resumeItem{区块链浏览器后端服务的维护，参与了升级实现不停机重启以及更快的账本状态返回，将缓存的交易放到 redis 中，实现服务重启时状态的恢复以及交易拉取和执行两个步骤的解耦}
-        \resumeItem{负责 OTC 服务的后端对接以及功能开发，主要运用了非对称加密方法传递 Key， 后续根据 Key 来进行加密通信，为海外用户提供货币兑换服务}
-        \resumeItem{开发并维护 NFT display（使用 gin+gorm 框架的 web 项目），通过 NFT 交易平台的 API 接口，定时获取相关 NFT 信息并解析传给前端进行定制化的展示。}
+        \resumeItem{开发并维护 NFT 展示的 web 项目，使用redis作为数据缓存，提供高并发的访问支持能力}
         \resumeItem{开发并维护开源工具goar（Arweave 区块链的 golang版本的sdk）}
         \resumeItem{开发并维护开源项目Arseeding（Arweave 区块链的数据网关项目，主要提供用户数据上传及下载的服务，将数据缓存至网关的数据库，再分批上传至区块链，确保可靠性上传}
-        \resumeItem{整理撰写多个生态相关的开源项目文档，开发并维护文档站点 \href{https://web3infra.dev/}{\underline{web3infra}}}
+        \resumeItem{整理撰写多个生态相关的开源项目技术文档，开发并维护文档站点 \href{https://web3infra.dev/}{\underline{web3infra}}}
       \resumeItemListEnd
 
 %    \resumeSubheading
@@ -196,34 +200,22 @@
 \section{项目经历}
     \vspace{-5pt}
     \resumeSubHeadingListStart
-%           \resumeProjectHeading
-%           {\textbf{\href{https://github.com/everFinance/arseeding}{Arseeding}} $|$ \emph{Go, S3, gin, gorm}}{July 2022 -- Present}
-%           \resumeItemListStart
-% %           \resumeItem{开发了 manifest 功能，通过重定向支持静态网站的渲染并提供相应的 sdk,用户上传成功后返回给一个 maniId, 用户使用 maniId，通过 serviceURL/maniId 即可访问静态站点}
-%            \resumeItem{开发了 bundle 功能，接收用户上传的签名数据，并将其上传至区块链进行存储}
-% %            \resumeItem{开发了流式数据处理功能，支持大数据上传和下载，通过将原来的内存数据缓存到磁盘中，实现大体积数据的上传和下载，减少内存消耗}
-% %            \resumeItem{支持 http 206 content-range，实现二进制类型文件的断点续传}
-%             \resumeItem{改造升级 KVDB,提供通用接口使 Arseeding 支持多种数据存储模式，并实现了 aws S3 KVDB 的数据上传与下载}
-%           \resumeItemListEnd
-%           \vspace{-20pt}
-
           \resumeProjectHeading
-          {\textbf{OTC 服务} $|$ \emph{Go, gorm, crypto}}{Nov 2022 -- Feb 2023}
-          \resumeItemListStart
-            \resumeItem{通过 HMAC + SHA256 加密生成对时间戳的签名，提供给前端作为安全参数传递给第三方的服务}
-            \resumeItem{通过 AES 对称加密使用会话密钥对通讯进行加密，目的是防止网络传输中,转账地址被替换的风险}
-%            \resumeItem{提供回调接口：供第三方返回区块链上的交易信息以及用户的信息,并对信息进行解析验证，并进行后续转账操作}
-            \resumeItem{开发自动转账机器人：将接收到的数字资产自动 mint 到跨链桥上，验证通过后，使用机器人所绑定的钱包将对应数量的数字资产转给用户}
-          \resumeItemListEnd
-          \vspace{-20pt}
-
-          \resumeProjectHeading
-          {\textbf{Mit6.824} $|$ \emph{Go, channel, lock}}{Feb 2022}
+          {\textbf{Mit6.824分布式系统} $|$ }{Feb. 2022}
           \resumeItemListStart
             \resumeItem{基于 MapReduce 的 split， map， shuffle， reduce 四个步骤实现并发的单词计数功能}
             \resumeItem{实现 Raft 共识算法，通过 RPC 进行节点间的通信，实现信息以及状态的同步，包括 leader 选举，log 复制压缩，快照}
             \resumeItem{基于 Raft 共识实现简易的分布式 KV 数据库，保证数据的强一致性}
-          \resumeItemListEnd 
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-35pt}
+    \resumeSubHeadingListStart
+              \resumeProjectHeading
+              {\textbf{学分银行系统} $|$ }{Nov. 2021 -- May. 2022}
+              \resumeItemListStart
+                \resumeItem{基于 MVC 软件架构模式，利用SSM开发框架实现的web应用，为用户提供登录注册，学习证书，学习成果认定，并将学习成果转换为相应的积分等功能}
+                \resumeItem{基于区块链技术，将用户的认证证书进行数据摘要和数字签名，将其上传至区块链平台实现数据的不可篡改和可追踪功能}
+              \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-15pt}
 
@@ -231,23 +223,13 @@
 %
 %-----------PROGRAMMING SKILLS-----------
 \section{专业技能}
-% \begin{itemize}[leftmargin=0.15in, label={}]
-%    \small{\item{
-%     \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL} \\
-%     \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
-%     \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
-%    }}
-% \end{itemize}
     \resumeItemListStart
-    \resumeItem{熟悉 golang 的基本语法和相关特性，内置数据结构和关键字的底层原理，GMP模型以及垃圾回收机制}
-    \resumeItem{熟悉 web 开发框架及流程，熟悉mysql和redis 等常见数据库的原理及使用，熟悉多人协作开发流程，熟悉 devops 流程}
+    \resumeItem{熟悉 Java/Golang 的基本语法和相关特性，内置数据结构和关键字的底层原理，内存管理和垃圾回收机制等}
+    \resumeItem{熟悉 web 开发框架(spring, gin等)及流程，熟悉mysql和redis 等常见数据库的原理及使用，熟悉多人协作开发流程}
     \resumeItem{具备扎实的计算机基础，熟悉常见的数据结构与算法，熟悉常见的计算机网络通信协议，熟悉操作系统的基本原理，喜欢在开源生态做贡献，追求高质量的代码}
     \resumeItem{了解数据存储、云原生、分布式相关的内容，了解docker，k8s，grpc，喜欢阅读源码（etcd,grpc,k8s,ethereum）等,熟悉grpc，etcd的原理和k8s scheduler 的原理及流程}
-    \resumeItem{了解 C++，java，python 等流行编程语言，了解基本的 linux 操作}
-%    \resumeItem{熟练使用 go-ethereum 的 sdk 进行 evm 生态的链上数据的查询、交易发送以及合约调用}
-%    \resumeItem{熟悉 arweave 生态的存储共识范式及其相关的开发技能}
-%    \resumeItem{掌握 opensea 的接口调用并利用其进行二次开发}
-    \resumeItem{喜欢思考，乐于接受挑战，具备快速分析解决问题的能力，有较强的学习能力，英文阅读能力，代码阅读能力，能快速上手投入实际项目的开发}
+    \resumeItem{了解 C++，python 等流行编程语言，了解基本的 linux 操作}
+    \resumeItem{喜欢思考，乐于接受挑战，具备快速分析解决问题的能力，有较强的学习能力，英文阅读能力，团队协作能力，能快速融入新的技术体系和团队中去。}
     \resumeItemListEnd
  \vspace{-16pt}
 
