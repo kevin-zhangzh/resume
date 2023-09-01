@@ -161,22 +161,15 @@
        \vspace*{2.0\multicolsep}
    %\resumeSubHeadingListEnd
 
-\section{荣誉证书}
-    \resumeItemListStart
-    \resumeItem{第八届全国大学生数学竞赛三等奖}
-    \resumeItem{第十一届全国大学生数学建模竞赛省一等奖}
-    \resumeItem{CET-6}
-    \resumeItemListEnd
- \vspace{-16pt}
-
 %-----------EXPERIENCE-----------
 \section{实习经历}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {everVision}{May. 2022 -- May. 2023}
-      {golang 后端开发}{杭州, 浙江}
+      {区块链后端开发}{杭州, 浙江}
       \resumeItemListStart
+        \resumeItem{参与监控系统的开发，主要用到了RPC 服务调用区块链节点的相关方法实现了合约的状态监控并对异常情况进行告警，发生异常操作时针对多签合约进行紧急关停，增加锁仓资金的安全性}
         \resumeItem{开发并维护 NFT 展示的 web 项目，使用redis作为数据缓存，提供高并发的访问支持能力}
         \resumeItem{开发并维护开源工具goar（Arweave 区块链的 golang版本的sdk）}
         \resumeItem{开发并维护开源项目Arseeding（Arweave 区块链的数据网关项目，主要提供用户数据上传及下载的服务，将数据缓存至网关的数据库，再分批上传至区块链，确保可靠性上传}
@@ -201,11 +194,11 @@
     \vspace{-5pt}
     \resumeSubHeadingListStart
           \resumeProjectHeading
-          {\textbf{Mit6.824分布式系统} $|$ }{Feb. 2022}
+          {\textbf{Raft分布式系统} $|$ }{Feb. 2022}
           \resumeItemListStart
             \resumeItem{基于 MapReduce 的 split， map， shuffle， reduce 四个步骤实现并发的单词计数功能}
             \resumeItem{实现 Raft 共识算法，通过 RPC 进行节点间的通信，实现信息以及状态的同步，包括 leader 选举，log 复制压缩，快照}
-            \resumeItem{基于 Raft 共识实现简易的分布式 KV 数据库，保证数据的强一致性}
+            \resumeItem{基于 Raft 共识实现简易的分布式 KV 数据库，客户端通过RPC与服务端通信，在数据完成共识后将其反馈给用户，保证数据的强一致性}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
     \vspace{-35pt}
@@ -224,10 +217,10 @@
 %-----------PROGRAMMING SKILLS-----------
 \section{专业技能}
     \resumeItemListStart
-    \resumeItem{熟悉 Java/Golang 的基本语法和相关特性，内置数据结构和关键字的底层原理，内存管理和垃圾回收机制等}
-    \resumeItem{熟悉 web 开发框架(spring, gin等)及流程，熟悉mysql和redis 等常见数据库的原理及使用，熟悉多人协作开发流程}
-    \resumeItem{具备扎实的计算机基础，熟悉常见的数据结构与算法，熟悉常见的计算机网络通信协议，熟悉操作系统的基本原理，喜欢在开源生态做贡献，追求高质量的代码}
-    \resumeItem{了解数据存储、云原生、分布式相关的内容，了解docker，k8s，grpc，喜欢阅读源码（etcd,grpc,k8s,ethereum）等,熟悉grpc，etcd的原理和k8s scheduler 的原理及流程}
+    \resumeItem{熟悉 Java/Go 的基本语法和相关特性，内置数据结构的底层原理，熟悉 JVM 内存管理和垃圾回收机制等}
+    \resumeItem{熟悉spring 等常用开发框架，springMVC 等开发模式及开发流程，熟悉多线程编程，熟悉mysql和redis 等常见数据库的原理及使用}
+    \resumeItem{具备扎实的计算机基础，熟悉常见的数据结构与算法，熟悉常见的计算机网络通信协议，熟悉操作系统的基本原理}
+    \resumeItem{了解云原生、分布式相关的内容，了解docker，k8s，grpc，喜欢阅读源码（etcd,grpc,k8s,ethereum）等,熟悉grpc，etcd的原理和k8s scheduler 的原理及流程}
     \resumeItem{了解 C++，python 等流行编程语言，了解基本的 linux 操作}
     \resumeItem{喜欢思考，乐于接受挑战，具备快速分析解决问题的能力，有较强的学习能力，英文阅读能力，团队协作能力，能快速融入新的技术体系和团队中去。}
     \resumeItemListEnd
